@@ -529,10 +529,10 @@ Text.prototype = {
         const editor = this.editor
 
         // 禁用 document 拖拽事件
-        const $document = $(document)
-        $document.on('dragleave drop dragenter dragover', function (e) {
-            e.preventDefault()
-        })
+        // const $document = $(document)
+        // $document.on('dragleave drop dragenter dragover', function (e) {
+        //     e.preventDefault()
+        // })
 
         // 添加编辑区域拖拽事件
         const $textElem = editor.$textElem

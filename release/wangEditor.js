@@ -3630,10 +3630,10 @@ Text.prototype = {
         var editor = this.editor;
 
         // 禁用 document 拖拽事件
-        var $document = $(document);
-        $document.on('dragleave drop dragenter dragover', function (e) {
-            e.preventDefault();
-        });
+        // var $document = $(document);
+        // $document.on('dragleave drop dragenter dragover', function (e) {
+        //     e.preventDefault();
+        // });
 
         // 添加编辑区域拖拽事件
         var $textElem = editor.$textElem;
