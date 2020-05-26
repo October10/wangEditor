@@ -15,9 +15,8 @@
   "main": "release/wangEditor.js",
   "maintainers": [
     {
-      "name": "wangfupeng1988",
-      "web": "http://www.cnblogs.com/wangfupeng1988/default.html?OnlyTitle=1",
-      "mail": "wangfupeng1988@163.com"
+      "name": "chenfeiran",
+      "mail": "chenfeiran@bytedance.com"
     }
   ],
   "repositories": [
