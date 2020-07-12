@@ -17,6 +17,10 @@
             // html 即编辑器中的内容
             console.log('onblur', html)
         }
+        editor.customConfig.onClickBackColor = function (value) {
+            console.log(value)
+            console.log(editor.selection.getSelectionText())
+        }
         editor.create()
     </script>
 </body>

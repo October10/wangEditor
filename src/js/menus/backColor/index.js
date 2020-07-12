@@ -13,6 +13,7 @@ function BackColor(editor) {
     // 获取配置的颜色
     const config = editor.config
     const colors = config.colors || []
+    const onClickBackColor = config.onClickBackColor
 
     // 当前是否 active 状态
     this._active = false
@@ -27,6 +28,7 @@ function BackColor(editor) {
         }),
         onClick: (value) => {
             // 注意 this 是指向当前的 BackColor 对象
+            onClickBackColor && onClickBackColor(value)
             this._command(value)
         }
     })
