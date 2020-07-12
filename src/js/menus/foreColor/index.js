@@ -13,7 +13,6 @@ function ForeColor(editor) {
     // 获取配置的颜色
     const config = editor.config
     const colors = config.colors || []
-    const onClickForeColor = config.onClickForeColor
 
     // 当前是否 active 状态
     this._active = false
@@ -28,7 +27,6 @@ function ForeColor(editor) {
         }),
         onClick: (value) => {
             // 注意 this 是指向当前的 ForeColor 对象
-            onClickForeColor && onClickForeColor(value)
             this._command(value)
         }
     })
